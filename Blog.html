@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+    <style>
+        .hide{
+            display:none;
+        }
+        .show{
+            display:block;
+        }
+    </style>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row flex">
+                <div class="col-sm-2">
+                    <div class="title">
+                        <p class="blogger">Blogger</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog">
+                        <ul class="nav nav-pills ">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link white">Home</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="about.html" class="nav-link white">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="BookOnlineCategory.html" class="nav-link white">Booking online</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Blog.html" class="nav-link white">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Portfolio.html" class="nav-link white">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="icon">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="login.html" class="js-login nav-link white"><i class="fa-regular fa-circle-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Cart.html" class="nav-link white"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="search_box pull-right nav-link">
+                                    <input type="text" class="border-radius search-text" placeholder="Search"/>
+                                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="Post-blogger">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 flex ">
+                    <div class="Post flex center">
+                        <div class="user-icon">
+                            <p class="blue"><i class="fa-regular fa-circle-user"></i></p>
+                        </div>
+                        <div class="Post-form center">
+                            <input type="text" placeholder="What are you thinking?" class="post-input js-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="All-post">
+        <div class="container">
+            <div class="row">
+                <h2 class="title_Post">All Post</h2>
+                <div class="col-sm-12 blog_Post">
+                    <div class="center img_Post">
+                        <img src="assets/Image/Image2.png" alt="8888" class="size_img_Post">
+                    </div>
+                    <div class="description_Post center background_Post">
+                        <div class="box_Login flex center">
+                            <div class="user-icon">
+                                <p class="blue font-size15"><i class="fa-regular fa-circle-user"></i></p>
+                            </div>
+                            <div class="user_name">
+                                <p class="height">Thinh</p>
+                                <p>5 minutes ago</p>
+                            </div>
+                            <div class="box_ellipsis">
+                                <ul id="nav">
+                                    <li>
+                                        <button class="btn btn-vertical"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <div id="js-subnav" class="subnav">
+                                            <button class="btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                                            <button class="btn"><i class="fa-solid fa-pen"></i>Edit</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box_Post">
+                            <p>Now You Can Blog from</p>
+                            <p>Everywhere</p>
+                            <p>
+                                We’ve made it quick and convenient for you to manage
+                                your blog from anywhere. In this blog post, we’ll share the ways you can post to...
+                            </p>
+                        </div>
+                        <div class="comment_Post border-full">
+                            <form action="">
+                                <input type="text" placeholder="Comment...">
+                                <button class="btn mt4"><i class="fa-sharp fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 blog_Post">
+                    <div class="center img_Post">
+                        <img src="assets/Image/Image7.png" alt="8888" class="size_img_Post">
+                    </div>
+                    <div class="description_Post center background_Post">
+                        <div class="box_Login flex center">
+                            <div class="user-icon">
+                                <p class="blue font-size15"><i class="fa-regular fa-circle-user"></i></p>
+                            </div>
+                            <div class="user_name">
+                                <p class="height">Thang</p>
+                                <p>3 minutes ago</p>
+                            </div>
+                            <div class="box_ellipsis">
+                                <ul id="nav">
+                                    <li>
+                                        <button class="btn btn-vertical"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <div id="js-subnav" class="subnav">
+                                            <button class="btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                                            <button class="btn"><i class="fa-solid fa-pen"></i>Edit</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box_Post">
+                            <p>Design a Beautiful Blog</p>
+                            <p>
+                                ‘When it comes to design, the Wix Blog has everything you
+                                need to create beautiful posts that will grab your reader's
+                            </p>
+                        </div>
+                        <div class="comment_Post border-full">
+                            <form action="">
+                                <input type="text" placeholder="Comment...">
+                                <button class="btn mt4"><i class="fa-sharp fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 blog_Post mb106">
+                    <div class="center img_Post">
+                        <img src="assets/Image/Image8.png" alt="8888" class="size_img_Post">
+                    </div>
+                    <div class="description_Post center background_Post">
+                        <div class="box_Login flex center">
+                            <div class="user-icon">
+                                <p class="blue font-size15"><i class="fa-regular fa-circle-user"></i></p>
+                            </div>
+                            <div class="user_name">
+                                <p class="height">Tam</p>
+                                <p class="minutes">1 minutes ago</p>
+                            </div>
+                            <div class="box_ellipsis">
+                                <ul id="nav">
+                                    <li>
+                                        <button class="btn btn-vertical"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                        <div id="js-subnav" class="subnav">
+                                            <button class="btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                                            <button class="btn"><i class="fa-solid fa-pen"></i>Edit</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box_Post ">
+                            <p>Grow Your Blog Community</p>      
+                            <p>
+                                With Wix Blog, you're not only sharing your voice with the
+                                world, you can also grow an active online community. To
+                                let readers sign up...
+                            </p>
+                        </div>
+                        <div class="comment_Post border-full">
+                            <form action="">
+                                <input type="text" placeholder="Comment...">
+                                <button class="btn mt4"><i class="fa-sharp fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-align">
+                    <div class="footer_subscribe">
+                        <h2 class="white">Subscribe Form</h2>
+                    </div>
+                    <div class="footer_subscribe_form">
+                        <input type="text" placeholder="e.g.email@example.com" required class="footer_subscribe_form_submit">
+                        <button class="btn_footer">JOIN</button>
+                    </div>
+                    <div class="footer_end">
+                        <p class="font_size white">Thanks for subscribing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="Create-post" class="hide">
+        <div class="modal-js">
+            <!-- <div class="modal-container">
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 flex text-align">
+                        <div class="form_post">
+                            <div class="login-close">
+                                <button class="float-right btn btn-close"></button>
+                            </div>
+                            <div class="post_title">
+                                <h3>Tạo Bài Viết</h3>
+                            </div>
+                            <div> 
+                                <p class="border"></p>
+                            </div>
+                            <form action="">
+                                <div class="post-description">
+                                    <input type="text" placeholder="What are you thinking?" class="width">
+                                </div>
+                                <div class="border-full flex">
+                                    <div class="post-icon center">
+                                        <!-- <button class="btn"><i class="fa-solid fa-face-smile"></i></button> -->
+                                        <button class="btn"><i class="fa-solid fa-image"></i></button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="btn-post">
+                                    <button class="btn">Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            // find: tim the html hoac class hoac ID con
+            $("input.js-input").click(function(){
+                $("#Create-post").removeClass("hide");
+            })
+            $("button.btn-close").click(function(){
+                $("#Create-post").addClass("hide")
+            })
+            $("button.btn-vertical").click(function(){
+                var subnav = $(this).siblings(".subnav");
+                var isHidden = subnav.hasClass("hidden");
+                $(".subnav").addClass("hidden");
+                $(".subnav").hide();
+                if (isHidden) {
+                    subnav.removeClass("hidden");
+                    subnav.show();
+                } else {
+                    subnav.addClass("hidden");
+                    subnav.hide();
+                }
+            })
+        })
+    </script>   
+</body>
+</html>

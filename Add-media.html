@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+    <style>
+        .hide{
+            display:none;
+        }
+        .show{
+            display:block;
+        }
+    </style>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row flex">
+                <div class="col-sm-2">
+                    <div class="title">
+                        <p class="blogger">Blogger</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog">
+                        <ul class="nav nav-pills ">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link white">Home</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="about.html" class="nav-link white">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="BookOnlineCategory.html" class="nav-link white">Booking online</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Blog.html" class="nav-link white">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Portfolio.html" class="nav-link white">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="icon">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="login.html" class="js-login nav-link white"><i class="fa-regular fa-circle-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Cart.html" class="nav-link white"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="search_box pull-right nav-link">
+                                    <input type="text" class="border-radius search-text" placeholder="Search"/>
+                                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="product">
+        <div class="container">
+            <div class="row">
+                <div class="product">
+                    <h1>Manage Product</h1>
+                    <table>
+                        <tr>
+                            <th><input type="checkbox" onclick="selectAllCheckboxes(this)"></th>
+                            <th></th>
+                            <th>Title</th>
+                            <th>Collections</th>
+                            <th>Source</th>
+                            <th>Create on</th>
+                            <th>
+                                <div>
+                                    <button class="btn mt5 ml">Delete</button>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/6375/2bd6/5c63c5c442ec81f477cb2d4a390c48ec?Expires=1687737600&Signature=MSDoE29V1H8HYzrlbngfS4yfQ7n0sLqmGCmP9fvbs8r4lplevRcoSSm7TYGoWtZkR3fh~PFlxMGDSp5N87IrJy4sQsZXWzcYO7a3vRQ9~OXY05wK87UOZpGxKClltwAkdVPk6TEa1KLoBGfB~UNMojba~AUHvgFBsG74gd6NQLsGxlkWQgdISgRmNICIDGGdXbiI0w6WXZhIZHAMO8Dv0-R-iMUelNfRFXGxL69TsWfLM6U3cbFiuNGxiNktUx~iD21Z-5BNcxWUrlU5PdlABtWVOb42mBrmYq5lvG7f9BMaC-aItBn3Aza3C~Rexb2sQVFayOiI336Wkf5AaoSjjQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/d95a/27d1/86c2aeb3140289c6efc01167254049a8?Expires=1687737600&Signature=Va8SLTctbGFJQ4lDhDmayFtm7lrDNeW2lbgE~K1USha98gaD0NTAZinz3yQz7vO-gFNqtuj-lsD7L40-2RV5saaDCkyKPlls3Gc6-HKUKLMFim8zy1jmZ2C8228nJdTszap9qhepPuSI0JaCak3l3qdSWQpODSgciytJs~3MMrGn8Q2yx6qr3lXLeibVBrhsSF4bAUuZHI6~f8fZXJrVaOXislT5Z6dY0ApsrNxljGkqvNtpOfzAHxf5mPngXPuWsqmkv--ipqaryaB2UreqWiyCl7MqB5ytvdn2ZHlpTHR~pjTMs75A-dXOeCDMunQT2T1C3MgImZD1jcS4W70WmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/f9fb/ade8/f6c4bcfb4b65e35610a35ab726e14908?Expires=1687737600&Signature=pNKcIBDrDiJUXrWr9g~DYFMc9lUpfWW1JZ9InQu0cn9WHCRpOC25~P-v1XBRGXeqtihEejQ15Y5W7~dKIG9x4x6H0nNRvNdkZicd1R317IacQKs6WH34COBTnEM1JrobHSOrzwCAjJB1L9cGYLxSemXd75Rvwe0ctc2MROhS13PPSw4vxUFbJwtyvrF2dc3ZKyECHFl-agAdwvdz6LxIMHAwpoNH2k44T~ts2tqWR8YlQDq1yJ2qwl3WqY~w2~6JWiQSajZxxgEtkJNBfvzQucScVlqXccIQIp1gYty1iw1fuHQSOnX9XlfeNnNjGQbvdvR1S8pVS7RV0DCSiZoDyg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/3260/05bd/8d8659a6587017947d3d81eeba4a25e7?Expires=1687737600&Signature=NUWgu87kYufkK4lhDu2xuBcFGQptNoryOSjlfG5uGc6KS5k7NIWDHfhEtn1ufj39AFtzLdcIFlzpEo8EYDWX6HShwQRtFJK0T2NboAa8p3yUbKcTrLssAvtyCRh6wWKMVDvnlUqZ2pGnk5~yQClQPxbgkZKuSKQ7yXvKtZAdpKfGFmhch~D5RMl6g1d9wEfNgkU~X8n1lH3rJ4~BXBVA3Vh8PR~P-1VAcGFVGYbgKtWwX7EqCQNnRJT9HR170iUVdBJkyM8MTOdTf6GVKroZD762tLPdLqLMm1FCp2JOI33fn27AzhdJdKK0gW6ZK-~NwPlBTROkKnWxNDqnpeS1gA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/18c1/98cc/0cbfddad7c106b3d6ec12e34525b5bd2?Expires=1687737600&Signature=g1T9wFvm72DYuUr-k4OgvQfSDVYs3O0tvixE-vOheGSyLaJWT3MtzKNsCa1PkJ2PZnKKCIykGWEXRCJuEVGSJCNwv6qWNhKDqlHlc2pYR9Iprlj5NgWAsH3FjJXKd1ZJOfEwBxAdY7gbRbbNfUu1GyA~mnsOUS94y0ssP8Eq8v7mlcH-v7GVMy82eS-3hwHJcwDPOYkJ4GIC4ztLUazxjZILlVX0hH~E9K4YtTgH~rETCx47trFKAtmv3zuMZGeKXA9OK2xu2Fc1mjcLWbJGxYz5DL1U-uqnXSeaBiD3O1p4xsueDC~SIFj4Pe26zx8Oeq8p~fpkJvcpdLU6U48uqg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/2bfc/15cb/c0e1cc613d762c81ad98575f293c108d?Expires=1687737600&Signature=CK~3HVI~YEbnjxIt5lCM-YjGN~1k7KBGZiF-snGtTbG-ThclNCrKesmNwe~vb1qf4~wmO2-cIsIGji~7qhYTNlKdcmIhMG5r-Km-tAfKI-t2IDxxUoiSwn16O6eXgACTm2vDSj1k2rvJZYYNWsMpoHpQaZMmf9FhaG8f--8l52Zf~ossCyqf6kzq7MRPQtuCB5KOLMr0nr0yUBXHcDltLQQWKo9kd27HtPcOkle7ktBWBNZ6LlytMecIMqM1Z0Zv9ijS1-8SBpK8PDyk2-mVWkE0uf38aHIh5vtz40SMFBCxYSz9Gn7zU1QZZDJmfTL5r4bHS0WhLsBXkuYrJKjhqQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="8888" class="size-img_Product">
+                            </td>
+                            <td>Project title</td>
+                            <td>My Portfolio</td>
+                            <td>Wix Portfolio</td>
+                            <td>May 11,2013</td>
+                            <td>
+                                <div class="flex">
+                                    <button class="btn btn-add mr mt5"><i class="fa-solid fa-plus"></i>Add</button>
+                                    <button class="btn mt5"><i class="fa-solid fa-pen"></i>Edit</button>    
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-align">
+                    <div class="footer_subscribe">
+                        <h2 class="white">Subscribe Form</h2>
+                    </div>
+                    <div class="footer_subscribe_form">
+                        <input type="text" placeholder="e.g.email@example.com" required class="footer_subscribe_form_submit">
+                        <button class="btn_footer">JOIN</button>
+                    </div>
+                    <div class="footer_end">
+                        <p class="font_size white">Thanks for subscribing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="Add-product">
+        <div class="modal-js">
+            <!-- <div class="modal-container">
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 flex text-align">
+                        <div class="form_Project-title">
+                            <div class="form-close">
+                                <a href="Manage-product.html"class="float-right btn btn-close"></a>
+                            </div>
+                            <div class="box-project flex ">
+                                <p class="mr">1. Project title</p><p class="mr">></p>
+                                <p class="mr">2. Description</p><p class="mr">></p>
+                                <p class="mr">3. Basic info</p><p class="mr">></p>
+                                <p class="mr blue">4. Media</p>
+                            </div>
+                            <div class="text-align">
+                                <h3>Add media to your project</h3>
+                                <p>Upload the images,photos,or videos that represent this project.</p>
+                            </div>
+                            <div class="name-project">
+                                <p>Project type</p>
+                                <div class="border-dash-project-media">
+                                    <button class="btn">+</button>
+                                    <p class="blue">Upload media from computer</p>
+                                </div>
+                            </div>
+                            <p class="ml20">Or</p>
+                            <p class="blue ml">Import from Wix Media Manager</p>
+                            <div class="mt">
+                                <a href="Add-basic.html" class="ml btn mr">Back</a>
+                                <a href="Manage-product.html" class="btn">Done</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script> 
+        $(document).ready(function(){
+            $("button.btn-add").click(function(){
+                $("#Add-product").removeClass("hide");
+            })
+        })
+    </script>
+</body>
+</html>
